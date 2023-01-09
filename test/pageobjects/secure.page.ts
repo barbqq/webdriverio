@@ -9,6 +9,10 @@ class SecurePage extends Page {
     /**
      * define selectors using getter methods
      */
+    public get logoutBtn(){
+        return $('a[href="/logout"]')
+    }
+    
     public get flashAlert () {
         return $('#flash');
     }
